@@ -8,8 +8,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 border-t border-gray-800 text-gray-300 py-12 px-6 md:px-20">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-        {/* left */}
-
+        {/* Left */}
         <div className="text-center md:text-left">
           <h3 className="text-2xl font-bold text-white">Kajal Kotak</h3>
           <p className="text-gray-400 mt-2">
@@ -22,15 +21,19 @@ export default function Footer() {
           <a
             href="https://github.com/kajalkotak"
             target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-white transition transform hover:-translate-y-1"
+            aria-label="GitHub"
           >
             <FaGithub />
           </a>
 
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/kajalkotak/"
             target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-white transition transform hover:-translate-y-1"
+            aria-label="LinkedIn"
           >
             <FaLinkedin />
           </a>
@@ -38,6 +41,7 @@ export default function Footer() {
           <a
             href="mailto:kajal.thobhani11@gmail.com"
             className="hover:text-white transition transform hover:-translate-y-1"
+            aria-label="Email"
           >
             <FaEnvelope />
           </a>
@@ -45,7 +49,9 @@ export default function Footer() {
           <a
             href="https://wa.me/919099811174"
             target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-white transition transform hover:-translate-y-1"
+            aria-label="WhatsApp"
           >
             <FaWhatsapp />
           </a>

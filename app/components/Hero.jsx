@@ -1,6 +1,9 @@
 // app/components/Hero.jsx
 
 "use client";
+
+import Image from "next/image";
+
 import { useState, useEffect } from "react";
 import { FaGithub, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
 
@@ -14,8 +17,9 @@ export default function Hero() {
     const interval = setInterval(() => {
       setTextIndex((prev) => (prev + 1) % texts.length);
     }, 2000);
+
     return () => clearInterval(interval);
-  }, []);
+  }, [texts.length]);
 
   return (
     <section
@@ -41,12 +45,14 @@ export default function Hero() {
           <a
             href="#projects"
             className="btn bg-blue-600 px-6 py-3 rounded-md hover:bg-blue-700 transition"
+            rel="noopener noreferrer"
           >
             View My Work
           </a>
           <a
             href="#contact"
             className="btn border border-blue-600 px-6 py-3 rounded-md hover:bg-blue-600 hover:text-white transition"
+            rel="noopener noreferrer"
           >
             Contact Me
           </a>
@@ -59,6 +65,7 @@ export default function Hero() {
             href="https://github.com/kajalkotak/"
             target="_blank"
             className="hover:text-white transition transform hover:-translate-y-1"
+            rel="noopener noreferrer"
           >
             <FaGithub />
           </a>
@@ -66,6 +73,7 @@ export default function Hero() {
             href="https://linkedin.com/"
             target="_blank"
             className="hover:text-white transition transform hover:-translate-y-1"
+            rel="noopener noreferrer"
           >
             <FaLinkedin />
           </a>
@@ -73,6 +81,7 @@ export default function Hero() {
             href="https://twitter.com/"
             target="_blank"
             className="hover:text-white transition transform hover:-translate-y-1"
+            rel="noopener noreferrer"
           >
             <FaTwitter />
           </a>
@@ -80,6 +89,7 @@ export default function Hero() {
             href="https://wa.me/919099811174"
             target="_blank"
             className="hover:text-white transition transform hover:-translate-y-1"
+            rel="noopener noreferrer"
           >
             <FaWhatsapp />
           </a>
@@ -89,11 +99,14 @@ export default function Hero() {
       {/* right side : hero image */}
 
       <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center md:justify-end">
-        <img
+        <Image
           src="/images/kajal.jpeg"
-          alt="Kajal"
-          className="w-100 h-100 md:w-80 md:h-80 rounded-full border-4 border-blue-600 object-cover shadow-xl"
-        ></img>
+          alt="Kajal Kotak"
+          width={320}
+          height={320}
+          priority
+          className="rounded-full border-4 border-blue-600 object-cover shadow-xl"
+        />
       </div>
     </section>
   );

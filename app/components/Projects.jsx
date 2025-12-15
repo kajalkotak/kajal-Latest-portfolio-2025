@@ -2,6 +2,8 @@
 
 // app/components/Projects.jsx
 
+// app/components/Projects.jsx
+
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -18,7 +20,6 @@ export default function Projects() {
       demo: "https://kajal-portfolio-recipe-finder-app.vercel.app/",
       github: "https://github.com/kajalkotak/kajal-portfolio-recipe-finder-app",
     },
-
     {
       title: "Notes App",
       description:
@@ -28,7 +29,6 @@ export default function Projects() {
       demo: "https://kajal-portfolio-notes-app-cix6.vercel.app/",
       github: "https://github.com/kajalkotak/kajal-portfolio-notes-App",
     },
-
     {
       title: "Expense Tracker",
       description:
@@ -38,7 +38,6 @@ export default function Projects() {
       demo: "https://expense-tracker-app-8gvw.vercel.app/",
       github: "https://github.com/kajalkotak/expense-tracker-app",
     },
-
     {
       title: "Kajal's Blog",
       description:
@@ -48,7 +47,6 @@ export default function Projects() {
       demo: "https://kajal-s-blog.vercel.app/",
       github: "https://github.com/kajalkotak/kajal-s-blog",
     },
-
     {
       title: "Food Order App",
       description:
@@ -65,7 +63,7 @@ export default function Projects() {
       id="projects"
       className="py-20 px-6 md:px-20 bg-gray-50 scroll-mt-24"
     >
-      {/* title */}
+      {/* Title */}
       <div className="text-center mb-16">
         <h2 className="text-4xl md:text-5xl font-bold">
           My <span className="text-blue-600">Projects</span>
@@ -75,40 +73,38 @@ export default function Projects() {
         </p>
       </div>
 
-      {/* project grid */}
+      {/* Project Grid */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-        {projects.map((project, index) => (
+        {projects.map((project) => (
           <motion.div
-            key={index}
+            key={project.title}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
             viewport={{ once: true }}
-            className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-out"
+            transition={{ duration: 0.4 }}
+            className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
           >
-            {/* image block */}
-            <div className="w-full h-48 relative">
+            {/* Image */}
+            <div className="relative w-full h-48">
               <Image
                 src={project.image}
                 alt={project.title}
                 fill
-                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                className="object-cover rounded-t-2xl"
               />
             </div>
 
-            {/* content */}
+            {/* Content */}
             <div className="p-6">
-              <h3 className="text-2xl font-semibold text-gray-900 mt-4">
-                {project.title}
-              </h3>
+              <h3 className="text-2xl font-semibold mt-4">{project.title}</h3>
 
               <p className="text-gray-600 mt-3">{project.description}</p>
 
-              {/* tech badges */}
               <div className="flex flex-wrap gap-2 mt-4">
-                {project.tech.map((t, i) => (
+                {project.tech.map((t) => (
                   <span
-                    key={i}
+                    key={t}
                     className="text-sm bg-gray-200 px-3 py-1 rounded-full"
                   >
                     {t}
@@ -116,11 +112,11 @@ export default function Projects() {
                 ))}
               </div>
 
-              {/* buttons */}
               <div className="flex justify-between items-center mt-6">
                 <a
                   href={project.demo}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2 text-blue-600 font-medium hover:underline"
                 >
                   Live Demo <FaExternalLinkAlt />
@@ -129,6 +125,7 @@ export default function Projects() {
                 <a
                   href={project.github}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2 text-gray-700 hover:text-black font-medium"
                 >
                   Code <FaGithub size={20} />

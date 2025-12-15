@@ -36,16 +36,16 @@ export const metadata: Metadata = {
     title: "Kajal Kotak | Frontend Developer",
     description:
       "Professional portfolio showcasing React & Next.js projects, skills, and contact details.",
-    url: "https://YOUR-VERCEL-LINK.vercel.app",
+    // url: "https://YOUR-VERCEL-LINK.vercel.app",
     siteName: "Kajal Kotak Portfolio",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Kajal Kotak Portfolio",
-      },
-    ],
+    // images: [
+    //   {
+    //     url: "/og-image.png",
+    //     width: 1200,
+    //     height: 630,
+    //     alt: "Kajal Kotak Portfolio",
+    //   },
+    // ],
     type: "website",
   },
 
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Kajal Kotak | Frontend Developer",
     description: "Frontend Developer portfolio built with React and Next.js.",
-    images: ["/og-image.png"],
+    // images: ["/og-image.png"],
   },
 };
 
@@ -64,7 +64,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="relative min-h-screen antialiased">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} relative min-h-screen antialiased`}
+      >
         <Navbar />
         <main>{children}</main>
         <Footer />

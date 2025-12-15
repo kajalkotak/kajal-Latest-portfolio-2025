@@ -45,31 +45,51 @@ export default function Navbar() {
           ${open ? "block" : "hidden"} md:flex`}
         >
           <li className="py-2 md:py-0">
-            <Link href="#hero" className={linkClass("hero")}>
+            <Link
+              href="#hero"
+              className={linkClass("hero")}
+              onClick={() => setOpen(false)}
+            >
               Home
             </Link>
           </li>
 
           <li className="py-2 md:py-0">
-            <Link href="#about" className={linkClass("about")}>
+            <Link
+              href="#about"
+              className={linkClass("about")}
+              onClick={() => setOpen(false)}
+            >
               About
             </Link>
           </li>
 
           <li className="py-2 md:py-0">
-            <Link href="#skills" className={linkClass("skills")}>
+            <Link
+              href="#skills"
+              className={linkClass("skills")}
+              onClick={() => setOpen(false)}
+            >
               Skills
             </Link>
           </li>
 
           <li className="py-2 md:py-0">
-            <Link href="#projects" className={linkClass("projects")}>
+            <Link
+              href="#projects"
+              className={linkClass("projects")}
+              onClick={() => setOpen(false)}
+            >
               Projects
             </Link>
           </li>
 
           <li className="py-2 md:py-0">
-            <Link href="#contact" className={linkClass("contact")}>
+            <Link
+              href="#contact"
+              className={linkClass("contact")}
+              onClick={() => setOpen(false)}
+            >
               Contact
             </Link>
           </li>
@@ -77,6 +97,7 @@ export default function Navbar() {
 
         {/* Mobile button */}
         <button
+          aria-label="Toggle menu"
           className="md:hidden px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
           onClick={() => setOpen(!open)}
         >

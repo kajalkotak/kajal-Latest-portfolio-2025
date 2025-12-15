@@ -1,6 +1,8 @@
 // app/components/About.jsx
 
 "use client";
+
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function About() {
@@ -28,10 +30,13 @@ export default function About() {
           transition={{ duration: 0.5 }}
           className="md:w-1/2 flex justify-center"
         >
-          <img
+          <Image
             src="/images/kajal.jpeg"
-            className="w-80 h-80 rounded-2xl shadow-xl object-cover border border-gray-300"
-            alt="Kajal Avatar"
+            alt="Kajal Kotak"
+            width={320}
+            height={320}
+            className="rounded-2xl shadow-xl object-cover border border-gray-300"
+            priority
           />
         </motion.div>
 

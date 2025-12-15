@@ -1,9 +1,10 @@
 // app/components/Contact.jsx
 
+// app/components/Contact.jsx
+
 "use client";
 
 import { motion } from "framer-motion";
-import { section } from "framer-motion/client";
 import { useState } from "react";
 
 export default function Contact() {
@@ -15,6 +16,7 @@ export default function Contact() {
 
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState("");
+  const [error, setError] = useState("");
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -24,21 +26,24 @@ export default function Contact() {
     e.preventDefault();
     setLoading(true);
     setSuccess("");
+    setError("");
 
-    const res = await fetch("/api/send-email", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(form),
-    });
+    try {
+      const res = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
 
-    if (res.ok) {
-      setSuccess("message sent successfully!");
+      if (!res.ok) throw new Error("Failed");
+
+      setSuccess("Message sent successfully!");
       setForm({ name: "", email: "", message: "" });
-    } else {
-      setSuccess("Something went wrong. Try again.");
+    } catch (err) {
+      setError("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
     }
-
-    setLoading(false);
   };
 
   return (
@@ -91,15 +96,17 @@ export default function Contact() {
 
           <button
             disabled={loading}
-            className="btn w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+            className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition disabled:opacity-60"
           >
             {loading ? "Sending..." : "Send Message"}
           </button>
 
           {success && (
-            <p className="text-center text-green-600 font-medium mt-4">
-              {success}
-            </p>
+            <p className="text-center text-green-600 font-medium">{success}</p>
+          )}
+
+          {error && (
+            <p className="text-center text-red-600 font-medium">{error}</p>
           )}
         </form>
       </motion.div>
