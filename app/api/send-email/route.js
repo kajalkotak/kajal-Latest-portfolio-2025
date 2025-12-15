@@ -4,21 +4,20 @@
 
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(req) {
   try {
-    const { name, email, message } = await req.json();
+    const apiKey = process.env.RESEND_API_KEY;
 
-    if (!name || !email || !message) {
-      return Response.json(
-        { error: "Missing required fields" },
-        { status: 400 }
-      );
+    if (!apiKey) {
+      throw new Error("RESEND_API_KEY is missing");
     }
 
+    const resend = new Resend(apiKey);
+
+    const { name, email, message } = await req.json();
+
     await resend.emails.send({
-      from: "Portfolio Contact <no-reply@resend.dev>",
+      from: "Portfolio Contact <onboarding@resend.dev>",
       to: ["kajalwebbrains@gmail.com"],
       subject: `New contact message from ${name}`,
       html: `
@@ -33,9 +32,6 @@ export async function POST(req) {
     return Response.json({ success: true });
   } catch (error) {
     console.error("Email error:", error);
-    return Response.json(
-      { success: false, error: "Email failed to send" },
-      { status: 500 }
-    );
+    return Response.json({ success: false }, { status: 500 });
   }
 }
