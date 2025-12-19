@@ -28,13 +28,13 @@ export default function Hero() {
 >
       {/* left side :text */}
       <div className="md:w-1/2 text-center md:text-left space-y-6">
-        <h1 className="text-5xl md:text-6xl font-bold mb-4">
-          Hi, I'm Kajal Kotak
-        </h1>
+        <h1 className="text-4xl md:text-6xl font-bold mb-4">
+      Hi, I'm Kajal Kotak
+    </h1>
 
-        <h2 className="text-2xl md:text-3xl text-blue-400 font-semibold">
-          {texts[textIndex]}
-        </h2>
+    <h2 className="text-xl md:text-3xl text-blue-400 font-semibold">
+      {texts[textIndex]}
+    </h2>
 
         <p className="text-md md:text-lg text-gray-300">
           I build modern web applications and interactive user experiences using
