@@ -24,7 +24,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-gray-900 text-white px-4 md:px-16 scroll-mt-24"
+      className="min-h-[100dvh] flex flex-col md:flex-row items-center justify-center bg-gray-900 text-white px-4 md:px-16 scroll-mt-24"
     >
       {/* left side :text */}
       <div className="md:w-1/2 text-center md:text-left space-y-6">
