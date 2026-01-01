@@ -65,6 +65,16 @@ export default function Projects() {
       demo: "https://devpushp-hospital.vercel.app/",
       github: "https://github.com/kajalkotak/devpushp-hospital",
     },
+
+    {
+      title: "Appointment Booking System",
+      description:
+        "Appointment Booking System",
+      image: "/images/projects/logo.jpeg",
+      tech: ["React", "API", "CSS"],
+      demo: "https://appointment-booking-system-vo.vercel.app/",
+      github: "https://github.com/kajalkotak/Appointment-Booking-System",
+    },
   ];
 
   return (
