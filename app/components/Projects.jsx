@@ -60,7 +60,7 @@ export default function Projects() {
       title: "devpusp hospital",
       description:
         "devpusp hospital",
-      image: "/images/projects/FoodOrderApp.jpeg",
+      image: "/images/projects/ddhLogo.svg",
       tech: ["React", "API", "CSS"],
       demo: "https://devpushp-hospital.vercel.app/",
       github: "https://github.com/kajalkotak/devpushp-hospital",
