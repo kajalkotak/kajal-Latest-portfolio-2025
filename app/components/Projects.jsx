@@ -56,6 +56,15 @@ export default function Projects() {
       demo: "https://food-order-app-theta-five.vercel.app/",
       github: "https://github.com/kajalkotak/Food-Order-App",
     },
+    {
+      title: "devpusp hospital",
+      description:
+        "devpusp hospital",
+      image: "/images/projects/FoodOrderApp.jpeg",
+      tech: ["React", "API", "CSS"],
+      demo: "https://devpushp-hospital.vercel.app/",
+      github: "https://github.com/kajalkotak/devpushp-hospital",
+    },
   ];
 
   return (
