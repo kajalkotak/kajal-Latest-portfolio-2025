@@ -75,6 +75,16 @@ export default function Projects() {
       demo: "https://appointment-booking-system-vo.vercel.app/",
       github: "https://github.com/kajalkotak/Appointment-Booking-System",
     },
+
+    {
+      title: "Admin Dashboard System",
+      description:
+        "Admin Dashboard System",
+      image: "/images/projects/admindashboard.jpg",
+      tech: ["React", "API", "CSS"],
+      demo: "https://admin-dashboard-rvnv.vercel.app/",
+      github: "https://github.com/kajalkotak/Admin-Dashboard/tree/main/my_react_portfolio/admin-dashboard",
+    },
   ];
 
   return (
