@@ -70,7 +70,7 @@ export default function Projects() {
       title: "Appointment Booking System",
       description:
         "Appointment Booking System",
-      image: "/images/projects/logo.jpeg",
+      image: "/images/projects/logo.jpg",
       tech: ["React", "API", "CSS"],
       demo: "https://appointment-booking-system-vo.vercel.app/",
       github: "https://github.com/kajalkotak/Appointment-Booking-System",
