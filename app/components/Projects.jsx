@@ -30,6 +30,15 @@ export default function Projects() {
       github: "https://github.com/kajalkotak/kajal-portfolio-notes-App",
     },
     {
+      title: "Todo App",
+      description:
+        "Built a full-stack task management app using React, Node.js, Express, and MongoDB",
+      image: "/images/projects/todoapp.jpeg",
+      tech: ["React", "Tailwind", "LocalStorage"],
+      demo: "https://todo-app-frontend-n3ah.vercel.app/",
+      github: "https://github.com/kajalkotak/todo-app-frontend",
+    },
+    {
       title: "Expense Tracker",
       description:
         "A professional expense tracking application with graphs and dynamic balance updates.",
