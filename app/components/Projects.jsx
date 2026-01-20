@@ -33,7 +33,7 @@ export default function Projects() {
       title: "Todo App",
       description:
         "Built a full-stack task management app using React, Node.js, Express, and MongoDB",
-      image: "/images/projects/todoapp.jpeg",
+      image: "/images/projects/todoapp.png",
       tech: ["React", "Tailwind", "LocalStorage"],
       demo: "https://todo-app-frontend-n3ah.vercel.app/",
       github: "https://github.com/kajalkotak/todo-app-frontend",
