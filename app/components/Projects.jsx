@@ -15,7 +15,7 @@ export default function Projects() {
       title: "Recipe Finder App",
       description:
         "A modern recipe search app using live API. Features search, filters, and responsive UI.",
-      image: "/images/projects/recipefinder.png",
+      // image: "/images/projects/recipefinder.png",
       tech: ["React", "API", "Tailwind"],
       demo: "https://kajal-portfolio-recipe-finder-app.vercel.app/",
       github: "https://github.com/kajalkotak/kajal-portfolio-recipe-finder-app",
