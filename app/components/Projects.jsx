@@ -66,9 +66,9 @@ export default function Projects() {
       github: "https://github.com/kajalkotak/Food-Order-App",
     },
     {
-      title: "devpusp hospital",
+      title: "Devpushp Hospital",
       description:
-        "devpusp hospital",
+        "devpushp hospital",
       image: "/images/projects/ddhLogo.svg",
       tech: ["React", "API", "CSS"],
       demo: "https://devpushp-hospital.vercel.app/",
