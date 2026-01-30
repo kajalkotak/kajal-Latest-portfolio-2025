@@ -123,7 +123,7 @@ export default function Projects() {
             className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
           >
             {/* Image */}
-            <div className="relative w-full h-48">
+            {/* <div className="relative w-full h-48">
               <Image
                 src={project.image}
                 alt={project.title}
@@ -131,7 +131,7 @@ export default function Projects() {
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-cover rounded-t-2xl"
               />
-            </div>
+            </div> */}
 
             {/* Content */}
             <div className="p-6">
