@@ -26,8 +26,8 @@ export default function Projects() {
         "A task management app built using Next.js and React featuring CRUD operations, dark mode, filters, search, and localStorage persistence.",
       image: "/images/projects/notesapp.jpeg",
       tech: ["Next.js", "React", "Tailwind CSS", "LocalStorage"],
-      demo: "https://kajal-portfolio-notes-app-cix6.vercel.app/",
-      github: "https://github.com/kajalkotak/kajal-portfolio-notes-App",
+      demo: "https://smart-task-planner-crud-app.vercel.app/",
+      github: "https://github.com/kajalkotak/Smart-Task-Planner-CRUD-App",
     },
     {
       title: "Todo App",
