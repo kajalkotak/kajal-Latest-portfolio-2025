@@ -21,11 +21,11 @@ export default function Projects() {
       github: "https://github.com/kajalkotak/kajal-portfolio-recipe-finder-app",
     },
     {
-      title: "Notes App",
+      title: "Smart Task Planner – CRUD App",
       description:
-        "A clean notes management app with categories, search, filters, and local storage support.",
+        "A task management app built using Next.js and React featuring CRUD operations, dark mode, filters, search, and localStorage persistence.",
       image: "/images/projects/notesapp.jpeg",
-      tech: ["React", "Tailwind", "LocalStorage"],
+      tech: ["Next.js", "React", "Tailwind CSS", "LocalStorage"],
       demo: "https://kajal-portfolio-notes-app-cix6.vercel.app/",
       github: "https://github.com/kajalkotak/kajal-portfolio-notes-App",
     },
