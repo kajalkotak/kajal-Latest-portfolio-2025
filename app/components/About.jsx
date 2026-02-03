@@ -31,7 +31,7 @@ export default function About() {
           className="md:w-1/2 flex justify-center"
         >
           <Image
-            src="/images/kajal.jpeg"
+            src="/images/kajal.jpg"
             alt="Kajal Kotak"
             width={320}
             height={320}
