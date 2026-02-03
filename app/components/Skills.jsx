@@ -46,10 +46,10 @@ export default function Skills() {
       {/* Title */}
       <div className="text-center mb-16">
         <h2 className="text-4xl md:text-5xl font-bold">
-          My <span className="text-blue-600">Skills</span>
+          Skills & <span className="text-blue-600">Technologies</span>
         </h2>
         <p className="text-gray-600 mt-4 text-lg">
-          Technologies and tools I use to build amazing web experiences.
+          Tools and technologies I use to build modern web applications.
         </p>
       </div>
 
