@@ -13,6 +13,7 @@ export default function Hero() {
   "Frontend Developer",
   "React & Next.js Developer",
   "Building Real-World Projects",
+  "Open to Junior Roles 🚀",
 ];
 
 
