@@ -100,7 +100,7 @@ export default function Hero() {
 
       <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center md:justify-end">
         <Image
-          src="/images/kajal.jpeg"
+          src="/images/kajal.jpg"
           alt="Kajal Kotak"
           width={320}
           height={320}
