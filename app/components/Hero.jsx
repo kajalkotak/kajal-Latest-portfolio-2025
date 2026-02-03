@@ -9,7 +9,12 @@ import { FaGithub, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
 
 export default function Hero() {
   const [textIndex, setTextIndex] = useState(0);
-  const texts = ["Web Developer", "React Enthusiast", "UI/UX Designer"];
+  const texts = [
+  "Frontend Developer",
+  "React & Next.js Developer",
+  "Building Real-World Projects",
+];
+
 
   // text animation
 
