@@ -76,21 +76,14 @@ export default function Hero() {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/"
+            href="https://www.linkedin.com/in/kajal-thobhani-kotak-039430133/"
             target="_blank"
             className="hover:text-white transition transform hover:-translate-y-1"
             rel="noopener noreferrer"
           >
             <FaLinkedin />
           </a>
-          <a
-            href="https://twitter.com/"
-            target="_blank"
-            className="hover:text-white transition transform hover:-translate-y-1"
-            rel="noopener noreferrer"
-          >
-            <FaTwitter />
-          </a>
+          
           <a
             href="https://wa.me/919099811174"
             target="_blank"
