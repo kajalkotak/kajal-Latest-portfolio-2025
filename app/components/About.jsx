@@ -50,9 +50,7 @@ export default function About() {
           <h3 className="text-3xl font-semibold">Who Am I?</h3>
 
           <p className="text-gray-700 leading-relaxed text-lg">
-            I’m Kajal Kotak — a frontend developer focused on creating clean,
-            modern and user-friendly web interfaces using React, Next.js and
-            Tailwind CSS.
+            I am a Frontend Developer specializing in React and Next.js. I build real-world projects with clean code, responsive UI, and persistent state. I am actively improving my skills and seeking a junior frontend developer role.
           </p>
 
           {/* Cards */}
