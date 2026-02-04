@@ -66,6 +66,15 @@ export default function Projects() {
       github: "https://github.com/kajalkotak/Food-Order-App",
     },
     {
+      title: "One Stop Carz",
+      description:
+        "One Stop Carz – Book car servicing, detailing, insurance claims and maintenance packages online.",
+      image: "/images/projects/FoodOrderApp.jpeg",
+      tech: ["React", "API", "CSS"],
+      demo: "https://one-stop-carz.vercel.app/",
+      github: "https://github.com/kajalkotak/One-Stop-Carz",
+    },
+    {
       title: "Devpushp Hospital",
       description:
         "devpushp hospital",
