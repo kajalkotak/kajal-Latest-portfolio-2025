@@ -109,7 +109,7 @@ export default function Projects() {
       description:
         "User Task authentication",
       image: "/images/projects/admindashboard.jpg",
-      tech: ["React", "API", "CSS","Node.js", "MongoDB],
+      tech: ["React", "API", "CSS","Node.js", "MongoDB"],
       demo: "https://task-manager-autht.vercel.app/",
       github: "https://github.com/kajalkotak/Task-Manager-Auth",
     },
@@ -119,7 +119,7 @@ export default function Projects() {
       description:
         "Expenses Trackere authentication",
       image: "/images/projects/admindashboard.jpg",
-      tech: ["React", "API", "CSS","Node.js", "MongoDB],
+      tech: ["React", "API", "CSS","Node.js", "MongoDB"],
       demo: "https://expense-tracker-auth-tau.vercel.app/",
       github: "https://github.com/kajalkotak/expense-tracker-auth",
     },
@@ -128,7 +128,7 @@ export default function Projects() {
       description:
         "User Manager",
       image: "/images/projects/admindashboard.jpg",
-      tech: ["React", "API", "CSS","Node.js", "MongoDB],
+      tech: ["React", "API", "CSS","Node.js", "MongoDB"],
       demo: "https://user-manager-three-umber.vercel.app/",
       github: "https://github.com/kajalkotak/user-manager",
     },
