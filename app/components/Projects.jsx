@@ -103,6 +103,35 @@ export default function Projects() {
       demo: "https://admin-dashboard-rvnv.vercel.app/",
       github: "https://github.com/kajalkotak/Admin-Dashboard/tree/main/my_react_portfolio/admin-dashboard",
     },
+
+    {
+      title: "User Task Auth",
+      description:
+        "User Task authentication",
+      image: "/images/projects/admindashboard.jpg",
+      tech: ["React", "API", "CSS","Node.js", "MongoDB],
+      demo: "https://task-manager-autht.vercel.app/",
+      github: "https://github.com/kajalkotak/Task-Manager-Auth",
+    },
+
+    {
+      title: "Expenses Tracker Auth",
+      description:
+        "Expenses Trackere authentication",
+      image: "/images/projects/admindashboard.jpg",
+      tech: ["React", "API", "CSS","Node.js", "MongoDB],
+      demo: "https://expense-tracker-auth-tau.vercel.app/",
+      github: "https://github.com/kajalkotak/expense-tracker-auth",
+    },
+    {
+      title: "User Manager",
+      description:
+        "User Manager",
+      image: "/images/projects/admindashboard.jpg",
+      tech: ["React", "API", "CSS","Node.js", "MongoDB],
+      demo: "https://user-manager-three-umber.vercel.app/",
+      github: "https://github.com/kajalkotak/user-manager",
+    },
   ];
 
   return (
